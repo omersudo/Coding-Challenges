@@ -1,0 +1,7 @@
+class Solution(object):
+    def twoSum(self, nums, target):
+        for int in range(len(nums)):
+            for secint in range(int+1, len(nums)):
+                if nums[int] + nums[secint] == target:
+                    return [int, secint]
+        
